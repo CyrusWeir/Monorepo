@@ -5,7 +5,7 @@ import "dotenv/config";
 // Note: This is optional and can be removed if the database connection
 // is not required when starting the application
 import "../database/checkConnection";
-import type { RequestHandler } from "express";
+
 // Import the Express application from ./app
 import app from "./app";
 
@@ -20,7 +20,3 @@ app
   .on("error", (err: Error) => {
     console.error("Error:", err.message);
   });
-const sayWelcome: RequestHandler = (req, res) => {
-  res.send("Welcome to Wild Series... !"); // ...
-};
-app.get("/", sayWelcome);

@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.card {
+  width: 20vw;
+  height: 20vw;
+  gap: 20vw;
+}
+img {
+  height: 100%;
+}
